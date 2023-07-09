@@ -60,6 +60,6 @@ print("Data:", res.json())
 
 
 #DELETE
-res = requests.delete(f"https://petstore.swagger.io/v2/pet/{id}", headers={'accept': 'application/json'})
-print("Status:", res_put.status_code)
+res_del = requests.delete(f"https://petstore.swagger.io/v2/pet/{id}", headers={'accept': 'application/json'})
+print("Status:", res_del.status_code)
 print("Data:", res.json())
